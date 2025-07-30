@@ -1,16 +1,20 @@
 # cannabisWhore
 
-Yo no soy hijo del senador dijo el sargento Obla-dee Wilson, soy loco de esta guerra
+Yo no soy hijo del senador!, dijo el sargento Obla-dee Wilson, soy loco de esta guerra !
 
-Dont hit me with Negative Waves, please plug back the black cable said the Liutenat Josh Bradley
+Dont hit me with Negative Waves, please plug back the black cable, said the Lieutenant Josh Bradley
 
-la cabo Mary Lou y la metralletista puertoriquena  Mika Reyes con una rizlas enrollaban una panama golden
+la cabo Mary Lou y la metralletista puertoriquena  Mika Reyes con unas rizzlas, enrollaban una panama golden
 
-korean private ri wen was guarding the perimeter , mario elvis, tego calde the dominican, Chis Ko the rear machine gunner 
+korean private Ri Wen was guarding the perimeter , Mario Elvis, Tego Calde the dominican , Chis Ko the rear machine gunner 
 
-The Haitian mercenary Jack Sonner , Berny the grenadier, Kid Yu had the Distinguished Service Cross medal.
+The Haitian mercenary Jack Sonel , Berny the grenadier, Kid Yu had the Distinguished Service Cross medal.
 
 private Nan Do the scout from delta company brought the mail
+
+second Lieutenant Jeanette, the helicopter pilot suddenly said - __LookAt the_Sun_Set()__
+
+__mac@vsog sudo port install kill_dirlewanger_again__
 
 When war is over, nos vamos a CostaRica a tomar y surfear !!!
 
