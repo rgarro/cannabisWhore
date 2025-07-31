@@ -10,11 +10,13 @@ korean private Ri Wen was guarding the perimeter , Mario Elvis, Tego Calde the d
 
 The Haitian mercenary Jack Sonel , Berny the grenadier, Kid Yu had the Distinguished Service Cross medal.
 
-private Nan Do the scout from delta company brought the mail
-
 second Lieutenant Jeanette, the helicopter pilot suddenly said - __LookAt the_Sun_Set()__
 
-__mac@vsog sudo port install kill_dirlewanger_again__
+private Nan Do the scout from delta company brought the mail
+
+General Abdul-Fattah Porras,  the guy who assembles a Hummer H1 in three hours, 
+
+sent the orders __mac@vsog sudo port install kill_dirlewanger_again__
 
 When war is over, nos vamos a CostaRica a tomar y surfear !!!
 

@@ -3,7 +3,42 @@ guid: d8fa96147e6dd4df191301fc364d7386
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: -876546973899608171, guid: 0513b3712e5924969a641b4cdab19b0e,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: -6478536213147159724, guid: 0513b3712e5924969a641b4cdab19b0e,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 670224309865224971, guid: 0513b3712e5924969a641b4cdab19b0e, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oliveBattle
+    second: {fileID: 8267977448008683367, guid: 0513b3712e5924969a641b4cdab19b0e,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trackGray
+    second: {fileID: 3723990068617235232, guid: 0513b3712e5924969a641b4cdab19b0e,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trackGrey
+    second: {fileID: 3723990068617235232, guid: 0513b3712e5924969a641b4cdab19b0e,
+      type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
