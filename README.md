@@ -12,7 +12,7 @@ Rommel ran out of petrol, the Special Forces raid to destroy Stukas while on the
 
 ### IN BLIZZARD and STORM
 
-Mis ancestros fumaban cachimba, comian terciopelo y sa iban a parrita en Jeep Willys
+Mis ancestros fumaban cachimba,atajaban las balas con baldes de agua, comian serpiente terciopelo y sa iban a parrita en Jeep Willys
 
 Did you like it? send me funds,help me to pay my MIT major  ... [Paypal](https://www.paypal.me/gospelOfLuke/25).
 
