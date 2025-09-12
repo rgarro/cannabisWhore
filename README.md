@@ -4,6 +4,7 @@ My WebGL Freelancer presentation
 
 Simple Tank Microgame to display at my Freelancer Website Home page 
 
+Gen. Montgomery recommended me for a Gig ...
 
 ### Chapter 1 
 

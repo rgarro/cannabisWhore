@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System.Globalization;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /**
@@ -41,6 +42,14 @@ public class Moriarty : MonoBehaviour
     }
 
     void moveBackward(){
+        transform.Translate(Vector3.backward * Time.deltaTime);//keep the faith baby !!
+    }
+
+    void turnLeft(){
+
+    }
+
+    void turnRight(){
 
     }
 
@@ -63,10 +72,12 @@ public class Moriarty : MonoBehaviour
             this.moveBackward();
         }
          if (Input.GetKey("left")){
-             this.yawLeft();
+             //this.yawLeft();
+             this.turnLeft();
          }
         if (Input.GetKey("right")){
-            this.yawRight();
+            //this.yawRight();
+            this.turnRight();
          }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
