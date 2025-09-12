@@ -9,12 +9,12 @@ using UnityEngine;
  *        /\ \   / ~~\_
  *  ./---/__|=/_/------//~~~\
  * /___________________/O   O \
- * (===(\_________(===(Oo o o O)          W<
+ * (===(\_________(===(Oo o o O)          
  *  \~~~\____/     \---\Oo__o--
  *    ~~~~~~~       ~~~~~~~~~~
  *  Operation Market Garden
- *  XXX Armored Group singing abide with me 
- * CBD Lucky strikes
+ *  XXX Armored Group 
+ *  cinematic hoovercraft style tank movement controller
  * 
  *
  *
@@ -34,5 +34,43 @@ public class Moriarty : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void moveForward(){
+
+    }
+
+    void moveBackward(){
+
+    }
+
+    void yawLeft(){
+
+    }
+
+    void yawRight(){
+        
+    }
+
+     void joystickControls(){
+        if (Input.GetKey("up"))
+        {
+            this.moveForward();
+        }
+
+        if (Input.GetKey("down"))
+        {
+            this.moveBackward();
+        }
+         if (Input.GetKey("left")){
+             this.yawLeft();
+         }
+        if (Input.GetKey("right")){
+            this.yawRight();
+         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //this.doRestart();
+        }
     }
 }
