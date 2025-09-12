@@ -43,10 +43,11 @@ public class Moriarty : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        this.joystickControls();
     }
 
     void moveForward(){
+        //Debug.Log("moving forward ");
         this.Chaffee.transform.Translate(Vector3.forward * this.tankForwardSpeed * Time.deltaTime);
     }
 
