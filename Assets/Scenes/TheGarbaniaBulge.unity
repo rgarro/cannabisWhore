@@ -379,8 +379,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e94e759b3e9e4ba68ba02f75bbabb87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightTracks: {fileID: 0}
-  leftTracks: {fileID: 0}
+  rightTracks: {fileID: 1467827446}
+  leftTracks: {fileID: 856062394}
+  engineSoundClip: {fileID: 0}
+  Chaffee: {fileID: 397975446}
+  tankForwardSpeed: 2
 --- !u!114 &397975448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,6 +494,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &856062394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6676088952749084255, guid: d8fa96147e6dd4df191301fc364d7386,
+    type: 3}
+  m_PrefabInstance: {fileID: 397975445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +677,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61f7742d9ac5c4bc589ffe4cb7fc6419, type: 3}
+--- !u!1 &1467827446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4952887515384085650, guid: d8fa96147e6dd4df191301fc364d7386,
+    type: 3}
+  m_PrefabInstance: {fileID: 397975445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1610604363
 GameObject:
   m_ObjectHideFlags: 0
