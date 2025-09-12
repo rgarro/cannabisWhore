@@ -15,7 +15,7 @@ using UnityEngine;
  *    ~~~~~~~       ~~~~~~~~~~
  *  Operation Market Garden
  *  XXX Armored Group 
- *  cinematic hoovercraft style tank movement controller
+ *  Cinematic Hoovercraft style Tank movement controller
  * 
  *
  *
@@ -25,6 +25,15 @@ public class Moriarty : MonoBehaviour
 {
     public GameObject rightTracks;
     public GameObject leftTracks;
+
+    private AudioSource servoSoundPlayer;
+	//public AudioClip servoSoundClip;
+    public AudioClip engineSoundClip;
+
+    public GameObject Chaffee;//see you in StarBucks homebrew snake Houston Preston ..
+
+    public float tankForwardSpeed = 2.00f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,11 +47,12 @@ public class Moriarty : MonoBehaviour
     }
 
     void moveForward(){
-        transform.Translate(Vector3.forward * Time.deltaTime);//keep the faith baby !!
+        this.Chaffee.transform.Translate(Vector3.forward * this.tankForwardSpeed * Time.deltaTime);
     }
 
     void moveBackward(){
-        transform.Translate(Vector3.backward * Time.deltaTime);//keep the faith baby !!
+        //transform.Translate(Vector3.backward * Time.deltaTime);
+        this.Chaffee.transform.Translate(-Vector3.forward * this.tankForwardSpeed * Time.deltaTime);
     }
 
     void turnLeft(){
