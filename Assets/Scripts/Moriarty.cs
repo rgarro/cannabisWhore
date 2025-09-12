@@ -37,7 +37,7 @@ public class Moriarty : MonoBehaviour
     }
 
     void moveForward(){
-
+        transform.Translate(Vector3.forward * Time.deltaTime);//keep the faith baby !!
     }
 
     void moveBackward(){
@@ -49,7 +49,7 @@ public class Moriarty : MonoBehaviour
     }
 
     void yawRight(){
-        
+
     }
 
      void joystickControls(){
