@@ -37,7 +37,7 @@ public class Moriarty : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.servoSoundPlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,11 +47,12 @@ public class Moriarty : MonoBehaviour
     }
 
     void moveForward(){
-        //Debug.Log("moving forward ");
+        Debug.Log("moving forward ");
         this.Chaffee.transform.Translate(Vector3.forward * this.tankForwardSpeed * Time.deltaTime);
     }
 
     void moveBackward(){
+         Debug.Log("moving backward ");
         //transform.Translate(Vector3.backward * Time.deltaTime);
         this.Chaffee.transform.Translate(-Vector3.forward * this.tankForwardSpeed * Time.deltaTime);
     }
