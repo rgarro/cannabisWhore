@@ -26,7 +26,7 @@ public class Moriarty : MonoBehaviour
     public GameObject rightTracks;
     public GameObject leftTracks;
 
-    private AudioSource servoSoundPlayer;
+    //private AudioSource servoSoundPlayer;
 	//public AudioClip servoSoundClip;
     public AudioClip engineSoundClip;
 
@@ -37,7 +37,7 @@ public class Moriarty : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.servoSoundPlayer = GetComponent<AudioSource>();
+        //this.servoSoundPlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
