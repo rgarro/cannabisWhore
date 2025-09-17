@@ -33,6 +33,8 @@ public class Moriarty : MonoBehaviour
     public GameObject Chaffee;//see you in StarBucks homebrew snake Houston Preston ..
 
     public float tankForwardSpeed = 2.00f;
+    private float tetha = 0.00f;//the angle
+     public float rotationSteps = 3.014f;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +46,10 @@ public class Moriarty : MonoBehaviour
     void Update()
     {
         this.joystickControls();
+    }
+
+    void playServoSoundOn(){
+
     }
 
     void moveForward(){
@@ -58,7 +64,9 @@ public class Moriarty : MonoBehaviour
     }
 
     void turnLeft(){
-
+        //this.playServoSoundOn();
+        this.tetha = this.Chaffee.transform.rotation.y + this.rotationSteps;
+         this.Chaffee.transform.Rotate(0,this.tetha,0);
     }
 
     void turnRight(){

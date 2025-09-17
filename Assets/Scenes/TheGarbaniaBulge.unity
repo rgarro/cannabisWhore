@@ -384,6 +384,7 @@ MonoBehaviour:
   engineSoundClip: {fileID: 0}
   Chaffee: {fileID: 397975446}
   tankForwardSpeed: 2
+  rotationSteps: 3.014
 --- !u!114 &397975448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,13 +578,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.21459006, y: -0, z: -0, w: 0.97670424}
-  m_LocalPosition: {x: -0.020000122, y: 3.3499992, z: -6.18}
+  m_LocalRotation: {x: 0.1988368, y: 0.0025922323, z: -0.010954539, w: 0.979968}
+  m_LocalPosition: {x: -0.030000184, y: 3.2499998, z: -7.4399996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 397975449}
   m_RootOrder: 29
-  m_LocalEulerAnglesHint: {x: 24.783, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 22.94, y: 0.045, z: -1.2720001}
 --- !u!1001 &1238900834
 PrefabInstance:
   m_ObjectHideFlags: 0
