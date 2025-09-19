@@ -65,12 +65,14 @@ public class Moriarty : MonoBehaviour
 
     void turnLeft(){
         //this.playServoSoundOn();
-        this.tetha = this.Chaffee.transform.rotation.y + this.rotationSteps;
+        this.tetha = this.Chaffee.transform.rotation.y - this.rotationSteps;
          this.Chaffee.transform.Rotate(0,this.tetha,0);
     }
 
     void turnRight(){
-
+        //this.playServoSoundOn();
+        this.tetha = this.Chaffee.transform.rotation.y + this.rotationSteps;
+         this.Chaffee.transform.Rotate(0,this.tetha,0);
     }
 
     void yawLeft(){
