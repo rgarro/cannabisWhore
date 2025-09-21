@@ -6,6 +6,7 @@ TagManager:
   tags:
   - tankFollowCamera
   - BatComputer
+  - tankFrontBackCamera
   layers:
   - Default
   - TransparentFX
