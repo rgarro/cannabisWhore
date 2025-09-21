@@ -2,21 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 /**
- *      _..--""````""--.._
- *    .'       |\/|       '.
- *   /    /`._ |  | _.'\    \
- *  ;    /              \    |
- *  |   /                \   |
- *  ;  / .-.          .-. \  ;
- *   \ |/   \.-.  .-./   \| /
- *    '._       \/       _.'
- *.     ''--..____..--''
- * 
- * Astaroth in the book of the kings
- * visions from gardena and hawthorne
- * whos gonna pay my f-one rocket ...
- *
- *
+ *                                 /(        )`
+ *                                 \ \___   / |
+ *                                 /- _  `-/  '
+ *                                (/\/ \ \   /\
+ *                                / /   | `    \
+ *                                O O   ) /    |
+ *                                `-^--'`<     '
+ *                    TM         (_.)  _  )   /
+ * |  | |\  | ~|~ \ /             `.___/`    /
+ * |  | | \ |  |   X                `-----' /
+ * `__| |  \| _|_ / \  <----.     __ / __   \
+ *                     <----|====O)))==) \) /====
+ *                     <----'    `--' `.__,' \
+ *                                  |        |
+ *                                   \       /
+ *                              ______( (_  / \______
+ *                            ,'  ,-----'   |        \
+ *                            `--{__________)        \/
+ *            hold me thrill me kiss me kill Me 
  *
  *@author Rolando <rgarro@gmail.com>
  */
