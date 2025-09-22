@@ -974,18 +974,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cdc5d1ef658b40919681653945b7151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons_x_corner: 200
+  buttons_x_corner: 364
   btnSkin: {fileID: 0}
   GunCamera2d: {fileID: 2800000, guid: 57141ce9dd71146e5a627b344993b345, type: 3}
   FollowIcon: {fileID: 2800000, guid: 7cd3b6d93cb364ad292f9d76efaa9b20, type: 3}
   gun_camera: {fileID: 397975450}
   follow_camera: {fileID: 963194225}
   boxWidth: 265
-  boxHeight: 90
-  boxY: 10
-  buttonWidth: 40
-  buttonHeight: 40
+  boxHeight: 120
+  boxY: 16
+  buttonWidth: 78
+  buttonHeight: 78
   buttonY: 40
   boxLabel: ':: Field Cameras ::'
   displayButtons: 1
-  spaceXCornerFromFirst: 55
+  spaceXCornerFromFirst: 148
