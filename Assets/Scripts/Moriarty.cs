@@ -26,8 +26,8 @@ public class Moriarty : MonoBehaviour
     public GameObject rightTracks;
     public GameObject leftTracks;
 
-    //private AudioSource servoSoundPlayer;
-	//public AudioClip servoSoundClip;
+    private AudioSource servoSoundPlayer;
+	public AudioClip servoSoundClip;
     public AudioClip engineSoundClip;
 
     public GameObject Chaffee;//see you in StarBucks homebrew snake Houston Preston ..
@@ -39,7 +39,7 @@ public class Moriarty : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //this.servoSoundPlayer = GetComponent<AudioSource>();
+        this.servoSoundPlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -52,25 +52,34 @@ public class Moriarty : MonoBehaviour
 
     }
 
+    private void playEngineSoundOn(){
+        this.servoSoundPlayer.clip = this.engineSoundClip;
+        if (!this.servoSoundPlayer.isPlaying) {
+            this.servoSoundPlayer.Play ();
+        }
+    }
+
     void moveForward(){
         Debug.Log("moving forward ");
+        this.playEngineSoundOn();
         this.Chaffee.transform.Translate(Vector3.forward * this.tankForwardSpeed * Time.deltaTime);
     }
 
     void moveBackward(){
          Debug.Log("moving backward ");
+         this.playEngineSoundOn();
         //transform.Translate(Vector3.backward * Time.deltaTime);
         this.Chaffee.transform.Translate(-Vector3.forward * this.tankForwardSpeed * Time.deltaTime);
     }
 
     void turnLeft(){
-        //this.playServoSoundOn();
+        this.playServoSoundOn();
         this.tetha = this.Chaffee.transform.rotation.y - this.rotationSteps;
          this.Chaffee.transform.Rotate(0,this.tetha,0);
     }
 
     void turnRight(){
-        //this.playServoSoundOn();
+        this.playServoSoundOn();
         this.tetha = this.Chaffee.transform.rotation.y + this.rotationSteps;
          this.Chaffee.transform.Rotate(0,this.tetha,0);
     }
