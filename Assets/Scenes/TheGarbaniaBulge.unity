@@ -468,7 +468,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c4a76d3a51d4858ae48f3a03223cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oddBallSpot: {fileID: 0}
+  oddBallSpot: {fileID: 397975451}
+  rotationSteps: 3.014
+  servoSoundClip: {fileID: 8300000, guid: 1f6e836bc01204340adbbbcf5f09afd4, type: 3}
 --- !u!4 &397975449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d8fa96147e6dd4df191301fc364d7386,
@@ -478,6 +480,12 @@ Transform:
 --- !u!1 &397975450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 65702495048144492, guid: d8fa96147e6dd4df191301fc364d7386,
+    type: 3}
+  m_PrefabInstance: {fileID: 397975445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &397975451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3293336427984311689, guid: d8fa96147e6dd4df191301fc364d7386,
     type: 3}
   m_PrefabInstance: {fileID: 397975445}
   m_PrefabAsset: {fileID: 0}
@@ -1104,7 +1112,7 @@ MonoBehaviour:
   windowHeight: 230
   windowWidth: 150
   instructionsString: "Move Tank with Arrow Keys \n\nElevate Gun A Z  \n\nShoot rocket
-    with spacebar \n\nR T Rotate Turret"
+    with spacebar \n\nF G Rotate Turret"
   labelString: ':: INSTRUCTIONS ::'
   marginVal: 25
   style:

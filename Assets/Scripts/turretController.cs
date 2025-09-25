@@ -25,8 +25,9 @@ public class turretController : MonoBehaviour
 
     public float rotationSteps = 3.014f;
     //public GameObject TheTurret;
-    //private AudioSource servoSoundPlayer;
+    
 	public AudioClip servoSoundClip;
+   
     private float tetha = 0.00f;//the angle
     
     // Start is called before the first frame update
@@ -36,9 +37,40 @@ public class turretController : MonoBehaviour
         this.tetha = this.oddBallSpot.transform.rotation.z;
     }
 
+ private void playServoSoundOn(){
+        this.servoSoundPlayer.clip = this.servoSoundClip;
+        if (!this.servoSoundPlayer.isPlaying) {
+            this.servoSoundPlayer.Play ();
+        }
+    }
+
+     private void leftArrowAction(){
+        //Debug.Log("left turret action ...");
+        this.playServoSoundOn();
+        this.tetha = this.oddBallSpot.transform.rotation.z + this.rotationSteps;
+         this.oddBallSpot.transform.Rotate(0,0,this.tetha);
+    }
+    private void rightArrowAction(){
+        //Debug.Log("right turret action ...");
+        this.playServoSoundOn();
+        this.tetha = this.oddBallSpot.transform.rotation.z - this.rotationSteps;
+        this.oddBallSpot.transform.Rotate(0,0,this.tetha);
+        
+    }
+
+    private void keyListeners(){
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            this.rightArrowAction();
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            this.leftArrowAction();
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        this.keyListeners();
     }
 }
