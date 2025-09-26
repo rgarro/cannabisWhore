@@ -2418,6 +2418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8863549293814441968}
+  - component: {fileID: 6272101263630838439}
   m_Layer: 0
   m_Name: STUKA
   m_TagString: Untagged
@@ -2451,6 +2452,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 6.6060004, y: 0, z: 0}
+--- !u!65 &6272101263630838439
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8091411294299176266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.3, y: 1.56, z: 5.38}
+  m_Center: {x: -0.38, y: 0.41, z: 3.18}
 --- !u!1 &8525409049139594682
 GameObject:
   m_ObjectHideFlags: 0
