@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oddBallSpot: {fileID: 397975451}
-  rotationSteps: 3.014
+  rotationSteps: 2.4
   servoSoundClip: {fileID: 8300000, guid: 1f6e836bc01204340adbbbcf5f09afd4, type: 3}
 --- !u!4 &397975449 stripped
 Transform:
