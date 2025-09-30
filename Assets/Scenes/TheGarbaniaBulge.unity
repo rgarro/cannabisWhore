@@ -622,7 +622,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -678,13 +678,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.51457626, y: -0.21903495, z: 0.13788027, w: 0.81744975}
+  m_LocalPosition: {x: 924, y: 296, z: 738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 64.38, y: -30, z: 0}
 --- !u!1 &856062394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6676088952749084255, guid: d8fa96147e6dd4df191301fc364d7386,
@@ -783,7 +783,7 @@ Skybox:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 0}
+  m_CustomSkybox: {fileID: 2100000, guid: 6b610271a93a748ab95dcf5ca3c35817, type: 2}
 --- !u!1001 &1238900834
 PrefabInstance:
   m_ObjectHideFlags: 0
