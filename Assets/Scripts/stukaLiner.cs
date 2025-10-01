@@ -33,7 +33,9 @@ public class stukaLiner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(spawnWaves());
+        Debug.Log("starting coroutine");
+		StartCoroutine(spawnWaves());
+
     }
 
     // Update is called once per frame
