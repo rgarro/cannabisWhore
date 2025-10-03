@@ -9,6 +9,10 @@ Simple Tank Microgame to display at my Freelancer Website Home page
 
 Rommel ran out of petrol, the Special Forces raid to destroy Stukas while on the ground
 
+Заводов труд и труд колхозных пашен
+Мы защитим, страну свою храня,
+Ударной силой орудийных башен
+И быстротой, и натиском огня.
 
 ### IN BLIZZARD and STORM
 
