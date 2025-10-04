@@ -18,5 +18,5 @@ Did you like it? send me funds,help me to pay my MIT major  ... [Paypal](https:/
 
 [![in blizzard and storm ... ](https://raw.githubusercontent.com/rgarro/cannabisWhore/main/tartan.PNG)]
 
-[![in blizzard and storm ... ](https://raw.githubusercontent.com/rgarro/cannabisWhore/main/victoria53.jpeg)]
+[![the Falklands are Brithish ... ](https://raw.githubusercontent.com/rgarro/cannabisWhore/main/victoria53.jpeg)]
 
