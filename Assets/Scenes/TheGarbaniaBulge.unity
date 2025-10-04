@@ -986,7 +986,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 4bfac3069a2294507b62ae0f33c1781d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1.5
+  m_Pitch: 2.1
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -998,7 +998,7 @@ AudioSource:
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 1
+  BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -1215,9 +1215,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hazard: {fileID: 8091411294299176266, guid: ac7911d291c1742f2a50d0b598d391b7, type: 3}
   spawnValues: {x: 400, y: 6, z: 200}
-  hazardCount: 0
+  hazardCount: 10
   spawnWait: 3
-  startWait: 3
+  startWait: 1.73
   waveWait: 3
   btnSkin: {fileID: 0}
   rangeValueLeft: -150
