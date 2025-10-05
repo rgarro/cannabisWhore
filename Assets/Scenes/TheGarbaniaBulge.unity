@@ -679,7 +679,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.51457626, y: -0.21903495, z: 0.13788027, w: 0.81744975}
-  m_LocalPosition: {x: 924, y: 296, z: 738}
+  m_LocalPosition: {x: 880, y: 604, z: 814}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -794,7 +794,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 61f7742d9ac5c4bc589ffe4cb7fc6419,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 518.4
+      value: 514
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61f7742d9ac5c4bc589ffe4cb7fc6419,
         type: 3}
@@ -1220,6 +1220,6 @@ MonoBehaviour:
   startWait: 1.73
   waveWait: 3
   btnSkin: {fileID: 0}
-  rangeValueLeft: -150
-  rangeValueRight: 150
+  rangeValueLeft: 570
+  rangeValueRight: 790
   zRotation: 0
