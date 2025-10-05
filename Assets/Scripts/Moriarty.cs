@@ -60,13 +60,13 @@ public class Moriarty : MonoBehaviour
     }
 
     void moveForward(){
-        Debug.Log("moving forward ");
+        //Debug.Log("moving forward ");
         this.playEngineSoundOn();
         this.Chaffee.transform.Translate(Vector3.forward * this.tankForwardSpeed * Time.deltaTime);
     }
 
     void moveBackward(){
-         Debug.Log("moving backward ");
+         //Debug.Log("moving backward ");
          this.playEngineSoundOn();
         //transform.Translate(Vector3.backward * Time.deltaTime);
         this.Chaffee.transform.Translate(-Vector3.forward * this.tankForwardSpeed * Time.deltaTime);

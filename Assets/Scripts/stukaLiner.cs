@@ -34,7 +34,7 @@ public class stukaLiner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("starting coroutine");
+        //Debug.Log("starting coroutine");
 		StartCoroutine(spawnWaves());
 
     }
@@ -46,7 +46,7 @@ public class stukaLiner : MonoBehaviour
     }*/
 
     IEnumerator spawnWaves(){
-Debug.Log("sadam hussein hanging on sad hill ...");
+//Debug.Log("sadam hussein hanging on sad hill ...");
 		yield return new WaitForSeconds (startWait);
 		while(true){
 			for (int i = 0; i < hazardCount; i++) {
