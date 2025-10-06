@@ -1217,9 +1217,11 @@ MonoBehaviour:
   spawnValues: {x: 400, y: 6, z: 200}
   hazardCount: 10
   spawnWait: 3
-  startWait: 1.73
+  startWait: 5
   waveWait: 3
   btnSkin: {fileID: 0}
   rangeValueLeft: 570
-  rangeValueRight: 790
+  rangeValueRight: 990
   zRotation: 0
+  rangeValueTop: 80
+  rangeValueBottom: 278

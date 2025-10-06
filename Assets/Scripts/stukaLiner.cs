@@ -30,6 +30,8 @@ public class stukaLiner : MonoBehaviour
 	public float rangeValueLeft = -6f;
 	public float rangeValueRight = 6f;
 	public float zRotation = 0.0f;
+	public float rangeValueTop = -6f;
+	public float rangeValueBottom = 6f;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +52,8 @@ public class stukaLiner : MonoBehaviour
 		yield return new WaitForSeconds (startWait);
 		while(true){
 			for (int i = 0; i < hazardCount; i++) {
-				Vector3 spawnPosition = new Vector3 (Random.Range (this.rangeValueLeft,rangeValueRight), spawnValues.y, spawnValues.z);
+				//Vector3 spawnPosition = new Vector3 (Random.Range (this.rangeValueLeft,rangeValueRight), spawnValues.y, spawnValues.z);
+				Vector3 spawnPosition = new Vector3 (Random.Range (this.rangeValueLeft,rangeValueRight), spawnValues.y,Random.Range (this.rangeValueTop,rangeValueBottom));
 				Quaternion spawnRotation = Quaternion.identity;
 				spawnRotation.z = this.zRotation;
 				Instantiate (hazard, spawnPosition, spawnRotation);
