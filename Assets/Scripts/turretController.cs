@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 /**
-* '\
+*       '\
 *        _\______
 *       /        \========
 *  ____|__________\_____
@@ -10,7 +10,7 @@ using UnityEngine;
 * \/ _===============_ \/
 *   "-===============-"
 * Operation Market Garden
-*  XXX Armored Group 
+*    XXX Armored Group 
 * La Tanqueta tenia un pioneer subia la moral ...
 * Panteras mas malparidos
 *
@@ -58,6 +58,11 @@ public class turretController : MonoBehaviour
         
     }
 
+    private void shoot(){
+        Debug.Log("fusible del disparador, lleva relay remoto desde el control command vehicle ");
+        //Quaternion rotation = Quaternion.Euler(this.barrelsObj.transform.localRotation.x,this.barrelsObj.transform.localRotation.y,this.barrelsObj.transform.localRotation.z);
+    }
+
     private void keyListeners(){
         if (Input.GetKeyDown(KeyCode.G))
         {
@@ -66,6 +71,10 @@ public class turretController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             this.leftArrowAction();
+        }
+         if (Input.GetKeyDown(KeyCode.Space))
+        {
+            this.shoot();
         }
     }
     // Update is called once per frame
