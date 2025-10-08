@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /**
@@ -11,8 +12,8 @@ using UnityEngine;
 *   "-===============-"
 * Operation Market Garden
 *    XXX Armored Group 
-* La Tanqueta tenia un pioneer subia la moral ...
-* Panteras mas malparidos
+* La Tanqueta tenia un pioneer, subia la moral ...
+* Panteras de la SS, pederastas , violadores de la falange que mataron su rey ...
 *
 *
 *@author Rolando <rgarro@gmail.com>
@@ -61,6 +62,15 @@ public class turretController : MonoBehaviour
     private void shoot(){
         Debug.Log("fusible del disparador, lleva relay remoto desde el control command vehicle ");
         //Quaternion rotation = Quaternion.Euler(this.barrelsObj.transform.localRotation.x,this.barrelsObj.transform.localRotation.y,this.barrelsObj.transform.localRotation.z);
+    }
+
+    private void elevateBarrel(String elevation = "UP"){//up yours baby ...
+        if(elevation == "UP"){
+
+        }
+        if(elevation == "DOWN"){
+            
+        }
     }
 
     private void keyListeners(){
