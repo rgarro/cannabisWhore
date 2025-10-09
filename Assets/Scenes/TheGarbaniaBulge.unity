@@ -479,6 +479,9 @@ MonoBehaviour:
   oddBallSpot: {fileID: 397975451}
   rotationSteps: 2.4
   servoSoundClip: {fileID: 8300000, guid: 1f6e836bc01204340adbbbcf5f09afd4, type: 3}
+  barrelPipe: {fileID: 1075522246}
+  maxBarrelElevation: -76.89
+  minBarrelElevation: -92.5
 --- !u!4 &397975449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d8fa96147e6dd4df191301fc364d7386,
@@ -784,6 +787,12 @@ Skybox:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: ec0d7453040584b0eb8dfda2f1042c5d, type: 2}
+--- !u!1 &1075522246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8783504099385393651, guid: d8fa96147e6dd4df191301fc364d7386,
+    type: 3}
+  m_PrefabInstance: {fileID: 397975445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1238900834
 PrefabInstance:
   m_ObjectHideFlags: 0
