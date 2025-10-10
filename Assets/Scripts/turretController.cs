@@ -13,7 +13,7 @@ using UnityEngine;
 * Operation Market Garden
 *    XXX Armored Group 
 * La Tanqueta tenia un pioneer, subia la moral ...
-* Panteras de la SS, pederastas , violadores de la falange que mataron su rey ...
+* 
 *
 *
 *@author Rolando <rgarro@gmail.com>
@@ -66,13 +66,15 @@ public class turretController : MonoBehaviour
         Debug.Log("fusible del disparador, lleva relay remoto desde el control command vehicle ");
         //Crazy... I mean like, so many positive waves... maybe we can't lose, you're on!
         //ELEVATES ON X
-        //Quaternion rotation = Quaternion.Euler(this.barrelsObj.transform.localRotation.x,this.barrelsObj.transform.localRotation.y,this.barrelsObj.transform.localRotation.z);
+        
     }
 
     private void elevateBarrel(String elevation = "UP"){//up yours baby ...
     Debug.Log("barrel elev:"+elevation);
+        //Quaternion rotation = Quaternion.Euler(this.barrelsObj.transform.localRotation.x,this.barrelsObj.transform.localRotation.y,this.barrelsObj.transform.localRotation.z);
         if(elevation == "UP"){
-
+            this.playServoSoundOn();
+		    //this.barrelPipe.transform.Rotate(0,this.barrelsElevationY,0);
         }
         if(elevation == "DOWN"){
             

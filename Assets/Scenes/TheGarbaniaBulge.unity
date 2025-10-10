@@ -1139,7 +1139,7 @@ MonoBehaviour:
   windowY: 115
   windowHeight: 230
   windowWidth: 150
-  instructionsString: "Move Tank with Arrow Keys \n\nElevate Gun A Z  \n\nShoot rocket
+  instructionsString: "Move Tank with Arrow Keys \n\nElevate Gun Z X  \n\nShoot rocket
     with spacebar \n\nF G Rotate Turret"
   labelString: ':: INSTRUCTIONS ::'
   marginVal: 25
