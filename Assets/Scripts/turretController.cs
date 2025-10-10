@@ -34,9 +34,14 @@ public class turretController : MonoBehaviour
     public GameObject barrelPipe;//This gun is an ordinary 76mm but we add this piece of pipe onto it, and the Krauts think, like, maybe it's a 90mm
     public float maxBarrelElevation = -76.00f;
     public float minBarrelElevation = -92.00f;
+
+    private float barrelsElevationY;
+    public float elevationSteps = 0.37f;
+
     // Start is called before the first frame update
     void Start()
     {
+        this.barrelsElevationY = this.barrelPipe.transform.rotation.y;
         this.servoSoundPlayer = GetComponent<AudioSource>();
         this.tetha = this.oddBallSpot.transform.rotation.z;
     }
@@ -65,8 +70,6 @@ public class turretController : MonoBehaviour
     private void shoot(){
         Debug.Log("fusible del disparador, lleva relay remoto desde el control command vehicle ");
         //Crazy... I mean like, so many positive waves... maybe we can't lose, you're on!
-        //ELEVATES ON X
-        
     }
 
     private void elevateBarrel(String elevation = "UP"){//up yours baby ...
@@ -74,10 +77,14 @@ public class turretController : MonoBehaviour
         //Quaternion rotation = Quaternion.Euler(this.barrelsObj.transform.localRotation.x,this.barrelsObj.transform.localRotation.y,this.barrelsObj.transform.localRotation.z);
         if(elevation == "UP"){
             this.playServoSoundOn();
-		    //this.barrelPipe.transform.Rotate(0,this.barrelsElevationY,0);
+            Debug.Log("barrelY:"+this.barrelsElevationY);
+            this.barrelsElevationY = Mathf.Abs(this.barrelsElevationY) + this.elevationSteps;
+		    this.barrelPipe.transform.Rotate(0,0,this.barrelsElevationY);
         }
         if(elevation == "DOWN"){
-            
+            Debug.Log("barrelY:"+this.barrelsElevationY);
+            this.barrelsElevationY = (Mathf.Abs(this.barrelsElevationY) + this.elevationSteps)*-1;
+            this.barrelPipe.transform.Rotate(0,0,this.barrelsElevationY);
         }
     }
 
