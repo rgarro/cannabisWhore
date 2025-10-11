@@ -480,7 +480,7 @@ MonoBehaviour:
   rotationSteps: 2.4
   servoSoundClip: {fileID: 8300000, guid: 1f6e836bc01204340adbbbcf5f09afd4, type: 3}
   barrelPipe: {fileID: 1441018687}
-  maxBarrelElevation: 20.5
+  maxBarrelElevation: 5.5
   minBarrelElevation: -2.5
   elevationSteps: 0.37
 --- !u!4 &397975449 stripped

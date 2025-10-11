@@ -76,10 +76,12 @@ public class turretController : MonoBehaviour
     Debug.Log("barrel elev:"+elevation);
         //Quaternion rotation = Quaternion.Euler(this.barrelsObj.transform.localRotation.x,this.barrelsObj.transform.localRotation.y,this.barrelsObj.transform.localRotation.z);
         if(elevation == "UP"){
-            this.playServoSoundOn();
-            Debug.Log("barrelY:"+this.barrelsElevationY);
             this.barrelsElevationY = Mathf.Abs(this.barrelsElevationY) + this.elevationSteps;
-		    this.barrelPipe.transform.Rotate(0,0,this.barrelsElevationY);
+            if(this.maxBarrelElevation > this.barrelsElevationY){
+                Debug.Log("barrelY:"+this.barrelsElevationY);
+                this.playServoSoundOn();
+                this.barrelPipe.transform.Rotate(0,0,this.barrelsElevationY);
+            }
         }
         if(elevation == "DOWN"){
             Debug.Log("barrelY:"+this.barrelsElevationY);
