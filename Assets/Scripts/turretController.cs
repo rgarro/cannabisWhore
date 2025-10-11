@@ -32,10 +32,10 @@ public class turretController : MonoBehaviour
     private float tetha = 0.00f;//the angle
 
     public GameObject barrelPipe;//This gun is an ordinary 76mm but we add this piece of pipe onto it, and the Krauts think, like, maybe it's a 90mm
-    public float maxBarrelElevation = -76.00f;
-    public float minBarrelElevation = -92.00f;
+    public float maxBarrelElevation = 3.00f;
+    public float minBarrelElevation = -2.00f;
 
-    private float barrelsElevationY;
+    private float barrelsElevationY;//Z rotation elevation
     public float elevationSteps = 0.37f;
 
     // Start is called before the first frame update
@@ -73,8 +73,7 @@ public class turretController : MonoBehaviour
     }
 
     private void elevateBarrel(String elevation = "UP"){//up yours baby ...
-    Debug.Log("barrel elev:"+elevation);
-        //Quaternion rotation = Quaternion.Euler(this.barrelsObj.transform.localRotation.x,this.barrelsObj.transform.localRotation.y,this.barrelsObj.transform.localRotation.z);
+        //Debug.Log("barrel elev:"+elevation);
         if(elevation == "UP"){
             this.barrelsElevationY = Mathf.Abs(this.barrelsElevationY) + this.elevationSteps;
             if(this.maxBarrelElevation > this.barrelsElevationY){
@@ -84,9 +83,12 @@ public class turretController : MonoBehaviour
             }
         }
         if(elevation == "DOWN"){
-            Debug.Log("barrelY:"+this.barrelsElevationY);
             this.barrelsElevationY = (Mathf.Abs(this.barrelsElevationY) + this.elevationSteps)*-1;
-            this.barrelPipe.transform.Rotate(0,0,this.barrelsElevationY);
+            if(this.minBarrelElevation < this.barrelsElevationY){
+                Debug.Log("barrelY:"+this.barrelsElevationY);
+                this.playServoSoundOn();
+                this.barrelPipe.transform.Rotate(0,0,this.barrelsElevationY);
+            }
         }
     }
 
