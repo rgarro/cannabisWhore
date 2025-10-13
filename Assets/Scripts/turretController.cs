@@ -38,6 +38,11 @@ public class turretController : MonoBehaviour
     private float barrelsElevationY;//Z rotation elevation
     public float elevationSteps = 0.37f;
 
+    public GameObject roundObject;
+    public int shoots = 0;
+    public float correctionDegrees = -1.0f;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +75,9 @@ public class turretController : MonoBehaviour
     private void shoot(){
         Debug.Log("fusible del disparador, lleva relay remoto desde el control command vehicle ");
         //Crazy... I mean like, so many positive waves... maybe we can't lose, you're on!
+        Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z);
+		Quaternion spawnRotation = this.barrelPipe.transform.rotation;
+        Instantiate (roundObject, spawnPosition, spawnRotation);
     }
 
     private void elevateBarrel(String elevation = "UP"){//up yours baby ...
