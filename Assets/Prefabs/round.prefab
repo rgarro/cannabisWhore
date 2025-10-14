@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5f057ba04ef2340abd902c69598eae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundVelocity: 2
+  roundVelocity: 14.13
   roundBody: {fileID: 2743946324996550076}
   is_rocket: 0
   is_round: 1
@@ -123,4 +123,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe44699547ba8cb4bb91b77c34e16c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToLive: 3
+  secondsToLive: 5
