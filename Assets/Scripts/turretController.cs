@@ -73,7 +73,7 @@ public class turretController : MonoBehaviour
     }
 
     private void shoot(){
-        Debug.Log("mataron al capi, mataron al capi, fumemonos este hachis ...");
+        //Debug.Log("mataron al capi, mataron al capi, fumemonos este hachis ...");
         //Crazy... I mean like, so many positive waves... maybe we can't lose, you're on!
         Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z);
         Quaternion spawnRotation = Quaternion.Euler(this.oddBallSpot.transform.localEulerAngles.x,this.oddBallSpot.transform.localEulerAngles.y,this.oddBallSpot.transform.localEulerAngles.z-this.correctionDegrees);//this.oddBallSpot.transform.rotation;
