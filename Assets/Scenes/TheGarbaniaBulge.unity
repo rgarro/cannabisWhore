@@ -486,7 +486,7 @@ MonoBehaviour:
   roundObject: {fileID: 2743946324996550076, guid: 8dd10003d73c4447ab037a3add5fa99f,
     type: 3}
   shoots: 0
-  correctionDegrees: -1
+  correctionDegrees: 190
 --- !u!4 &397975449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d8fa96147e6dd4df191301fc364d7386,
