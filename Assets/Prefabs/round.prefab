@@ -107,10 +107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5f057ba04ef2340abd902c69598eae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundVelocity: 14.13
+  roundVelocity: 22.5
   roundBody: {fileID: 2743946324996550076}
   is_rocket: 0
   is_round: 1
+  opposite_direction: 1
 --- !u!114 &4870639456543547723
 MonoBehaviour:
   m_ObjectHideFlags: 0
