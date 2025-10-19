@@ -42,6 +42,8 @@ public class turretController : MonoBehaviour
     public GameObject roundObject;
     public int shoots = 0;
     public float correctionDegrees = -1.0f;
+    public float yRoundRotationCorrectionDegrees = -1.0f;
+
 
 
     // Start is called before the first frame update
@@ -74,19 +76,19 @@ public class turretController : MonoBehaviour
     }
 
     private void shoot(){
-        Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z);
+        //Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z);
+        Vector3 spawnPosition = new Vector3 (this.barrelPipe.transform.position.x,this.barrelPipe.transform.position.y,this.barrelPipe.transform.position.z);
         //Quaternion spawnRotation = Quaternion.Euler(this.oddBallSpot.transform.localEulerAngles.x,this.oddBallSpot.transform.localEulerAngles.y,this.oddBallSpot.transform.localEulerAngles.z-this.correctionDegrees);//this.oddBallSpot.transform.rotation;
         //Quaternion spawnRotation = Quaternion.Euler(this.oddBallSpot.transform.localEulerAngles.x,this.oddBallSpot.transform.localEulerAngles.y,this.oddBallSpot.transform.localEulerAngles.z);
-        Quaternion spawnRotation = Quaternion.Euler(this.barrelPipe.transform.localEulerAngles.x,this.barrelPipe.transform.localEulerAngles.y,this.barrelPipe.transform.localEulerAngles.z+180);
+        Quaternion spawnRotation = Quaternion.Euler(this.barrelPipe.transform.localEulerAngles.y,this.oddBallSpot.transform.localEulerAngles.y+180,this.oddBallSpot.transform.localEulerAngles.z);//this.barrelPipe.transform.localEulerAngles.z);
         Instantiate (roundObject, spawnPosition, spawnRotation);
     }
 
-    private void elevateBarrel(String elevation = "UP"){//up yours baby ...
-        //Debug.Log("barrel elev:"+elevation);
+    private void elevateBarrel(String elevation = "UP"){
+        //Debug.Log("barrel elev:"+elevation);//up yours baby ...
         if(elevation == "UP"){
             this.barrelsElevationY = Mathf.Abs(this.barrelsElevationY) + this.elevationSteps;
             if(this.maxBarrelElevation > this.barrelsElevationY){
-                //Debug.Log("barrelY:"+this.barrelsElevationY);
                 this.playServoSoundOn();
                 this.barrelPipe.transform.Rotate(0,0,this.barrelsElevationY);
             }
@@ -94,7 +96,6 @@ public class turretController : MonoBehaviour
         if(elevation == "DOWN"){
             this.barrelsElevationY = (Mathf.Abs(this.barrelsElevationY) + this.elevationSteps)*-1;
             if(this.minBarrelElevation < this.barrelsElevationY){
-                //Debug.Log("barrelY:"+this.barrelsElevationY);
                 this.playServoSoundOn();
                 this.barrelPipe.transform.Rotate(0,0,this.barrelsElevationY);
             }
