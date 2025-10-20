@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7486761630535167083}
   - component: {fileID: 1422205479649268492}
   - component: {fileID: 4870639456543547723}
+  - component: {fileID: 2924453561210240797}
   m_Layer: 0
   m_Name: round
   m_TagString: Untagged
@@ -93,7 +94,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1422205479649268492
 MonoBehaviour:
@@ -107,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5f057ba04ef2340abd902c69598eae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundVelocity: 22.5
+  roundVelocity: 12.5
   roundBody: {fileID: 2743946324996550076}
   is_rocket: 0
   is_round: 1
@@ -125,3 +126,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsToLive: 5
+--- !u!114 &2924453561210240797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743946324996550076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0489df3adfabfcf49b285e471c7c6651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
+  roundHit: {fileID: 0}
+  originTag: m1tank
+  scoreManagerTag: BatComputer
+  ptsToIncrease: 10
+  isDamage: 0

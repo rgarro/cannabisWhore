@@ -7,6 +7,7 @@ TagManager:
   - tankFollowCamera
   - BatComputer
   - tankFrontBackCamera
+  - stukaTarget
   layers:
   - Default
   - TransparentFX
