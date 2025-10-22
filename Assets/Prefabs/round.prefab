@@ -138,8 +138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0489df3adfabfcf49b285e471c7c6651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
-  roundHit: {fileID: 0}
+  explosion: {fileID: 5900953402620731293, guid: 7c0e74fa119cf4d9eb03fa644d69ba90,
+    type: 3}
+  roundHit: {fileID: 5900953402620731293, guid: 7c0e74fa119cf4d9eb03fa644d69ba90,
+    type: 3}
   originTag: m1tank
   scoreManagerTag: BatComputer
   ptsToIncrease: 10
