@@ -2420,7 +2420,6 @@ GameObject:
   - component: {fileID: 8863549293814441968}
   - component: {fileID: 6272101263630838439}
   - component: {fileID: 2554149465105492412}
-  - component: {fileID: 4198534071858324211}
   m_Layer: 0
   m_Name: STUKA
   m_TagString: stukaTarget
@@ -2483,18 +2482,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 3
---- !u!114 &4198534071858324211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8091411294299176266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 193ace2efca8548de897b02deae48650, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8525409049139594682
 GameObject:
   m_ObjectHideFlags: 0

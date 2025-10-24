@@ -27,6 +27,12 @@ public class roundCollisionHandler : MonoBehaviour
         
     }*/
     
+    private void OnTriggerEnter(Collider other)
+    {
+         Debug.Log("Collision detected  "+other.gameObject.name);
+    }
+    
+
     void OnCollisionEnter(Collision collision){
         Debug.Log("Collision detected with: " + collision.gameObject.name);
     }
