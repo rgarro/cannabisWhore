@@ -235,7 +235,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d8fa96147e6dd4df191301fc364d7386,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.1659054
+      value: -0.16589119
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d8fa96147e6dd4df191301fc364d7386,
         type: 3}
@@ -245,7 +245,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d8fa96147e6dd4df191301fc364d7386,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.98614126
+      value: 0.98614407
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d8fa96147e6dd4df191301fc364d7386,
         type: 3}
@@ -477,6 +477,26 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 1.06
       objectReference: {fileID: 0}
+    - target: {fileID: 3910985370424871504, guid: d8fa96147e6dd4df191301fc364d7386,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7050528
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910985370424871504, guid: d8fa96147e6dd4df191301fc364d7386,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.053775303
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910985370424871504, guid: d8fa96147e6dd4df191301fc364d7386,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7050528
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910985370424871504, guid: d8fa96147e6dd4df191301fc364d7386,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.053938925
+      objectReference: {fileID: 0}
     - target: {fileID: 8934777400606672865, guid: d8fa96147e6dd4df191301fc364d7386,
         type: 3}
       propertyPath: m_IsActive
@@ -531,7 +551,7 @@ MonoBehaviour:
   roundObject: {fileID: 2743946324996550076, guid: 8dd10003d73c4447ab037a3add5fa99f,
     type: 3}
   shoots: 0
-  correctionDegrees: 190
+  correctionDegrees: 180
   yRoundRotationCorrectionDegrees: -180
 --- !u!4 &397975449 stripped
 Transform:

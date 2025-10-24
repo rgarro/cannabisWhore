@@ -29,11 +29,12 @@ public class roundCollisionHandler : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
+         Debug.Log("Collision detected+++  ");
          Debug.Log("Collision detected  "+other.gameObject.name);
     }
     
 
-    void OnCollisionEnter(Collision collision){
+    /*void OnCollisionEnter(Collision collision){
         Debug.Log("Collision detected with: " + collision.gameObject.name);
     }
 
@@ -45,7 +46,7 @@ public class roundCollisionHandler : MonoBehaviour
     void OnCollisionExit(Collision collision)
     {
         Debug.Log("Stopped colliding with: " + collision.gameObject.name);
-    }
+    }*/
 
     // Update is called once per frame
     /*void Update()
