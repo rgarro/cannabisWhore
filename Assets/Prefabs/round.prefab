@@ -183,4 +183,4 @@ MonoBehaviour:
   originTag: m1tank
   scoreManagerTag: BatComputer
   ptsToIncrease: 10
-  isDamage: 1
+  isDamage: 0
