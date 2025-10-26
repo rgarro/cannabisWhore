@@ -62,15 +62,13 @@ public class turretController : MonoBehaviour
     }
 
      private void leftArrowAction(){
-        //Debug.Log("left turret action ...");
         this.playServoSoundOn();
-        this.tetha = this.oddBallSpot.transform.rotation.z + (this.rotationSteps);//*Time.deltaTime
+        this.tetha = this.oddBallSpot.transform.rotation.z - (this.rotationSteps);//*Time.deltaTime
          this.oddBallSpot.transform.Rotate(0,0,this.tetha);
     }
     private void rightArrowAction(){
-        //Debug.Log("right turret action ...");
         this.playServoSoundOn();
-        this.tetha = this.oddBallSpot.transform.rotation.z - (this.rotationSteps);
+        this.tetha = this.oddBallSpot.transform.rotation.z + (this.rotationSteps);
         this.oddBallSpot.transform.Rotate(0,0,this.tetha);
         
     }

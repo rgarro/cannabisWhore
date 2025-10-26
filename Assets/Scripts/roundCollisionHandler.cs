@@ -58,10 +58,7 @@ public class roundCollisionHandler : MonoBehaviour
     }
     
     private void OnTriggerEnter(Collider other)
-    {
-         //Debug.Log("Collision detected+++  ");
-         //Debug.Log("Collision detected  "+other.gameObject.name);
-         //Debug.Log("collision .."); 
+    { 
         if(this.originTag == other.gameObject.tag){
         
         }else{
