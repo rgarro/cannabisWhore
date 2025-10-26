@@ -8,6 +8,8 @@ TagManager:
   - BatComputer
   - tankFrontBackCamera
   - stukaTarget
+  - m4a
+  - boundary
   layers:
   - Default
   - TransparentFX

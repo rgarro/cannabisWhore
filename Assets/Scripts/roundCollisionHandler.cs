@@ -24,7 +24,7 @@ public class roundCollisionHandler : MonoBehaviour
     public GameObject explosion;
     public GameObject roundHit;
 
-    public string originTag = "m1tank";
+    public string originTag = "m4a";
     public string scoreManagerTag = "BatComputer";
     private GameObject scoreUpdater;
     private GameObject damageCountdown;

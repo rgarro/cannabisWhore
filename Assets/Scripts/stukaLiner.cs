@@ -48,11 +48,11 @@ public class stukaLiner : MonoBehaviour
     }*/
 
     IEnumerator spawnWaves(){
-Debug.Log("starting wave spawner ...");
+//Debug.Log("starting wave spawner ...");
 		yield return new WaitForSeconds (this.startWait);
 		//while(true){
 			for (int i = 0; i < this.hazardCount; i++) {
-Debug.Log("stuka#"+i);				
+//Debug.Log("stuka#"+i);				
 				//Vector3 spawnPosition = new Vector3 (Random.Range (this.rangeValueLeft,rangeValueRight), spawnValues.y, spawnValues.z);
 				Vector3 spawnPosition = new Vector3 (Random.Range (this.rangeValueLeft,this.rangeValueRight), this.spawnValues.y,Random.Range (this.rangeValueTop,this.rangeValueBottom));
 				Quaternion spawnRotation = Quaternion.identity;
