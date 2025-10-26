@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 228403563395628640}
   m_Layer: 0
   m_Name: round
-  m_TagString: Untagged
+  m_TagString: roundTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181,8 +181,9 @@ MonoBehaviour:
     type: 3}
   roundHit: {fileID: 5900953402620731293, guid: 7c0e74fa119cf4d9eb03fa644d69ba90,
     type: 3}
-  originTag: m1tank
+  originTag: roundTag
   scoreManagerTag: BatComputer
+  expectedTargetTag: stukaTarget
   ptsToIncrease: 10
   isDamage: 0
 --- !u!82 &228403563395628640

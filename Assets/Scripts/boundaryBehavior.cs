@@ -44,11 +44,11 @@ public class boundaryBehavior : MonoBehaviour
     }*/
 
      private void OnTriggerEnter(Collider other){
-        Debug.Log("Checking boundary collision:"+other.gameObject.tag);
+        //Debug.Log("Checking boundary collision:"+other.gameObject.tag);
         if(other.gameObject.tag == this.originTag){
             Vector3 targetPosition = new Vector3(this.returnX,this.returnY,this.returnZ);
             other.gameObject.transform.position = targetPosition;
-            Debug.Log("teleporteo a reurn");
+            //Debug.Log("teleporteo a reurn");
         }
      }
 

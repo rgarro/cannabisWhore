@@ -26,6 +26,7 @@ public class roundCollisionHandler : MonoBehaviour
 
     public string originTag = "m4a";
     public string scoreManagerTag = "BatComputer";
+    public string expectedTargetTag = "stukaTarget";
     private GameObject scoreUpdater;
     private GameObject damageCountdown;
     public int ptsToIncrease = 10;
@@ -78,9 +79,11 @@ public class roundCollisionHandler : MonoBehaviour
                     //get top ten scores
                     //legend pointing to restart
             }else{
-                GameObject e = Instantiate(this.roundHit) as GameObject;
-                e.transform.position = other.gameObject.transform.position;
-                Destroy(this.gameObject);//fucking destroy
+                if(this.expectedTargetTag == other.gameObject.tag){
+                    GameObject e = Instantiate(this.roundHit) as GameObject;
+                    e.transform.position = other.gameObject.transform.position;
+                    Destroy(this.gameObject);//fucking destroy
+                }
             }
             }
         }else{

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Globalization;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,6 +45,8 @@ public class turretController : MonoBehaviour
     public float correctionDegrees = -1.0f;
     public float yRoundRotationCorrectionDegrees = -1.0f;
 
+    public float zShootExtendDistance = 3.00f;
+
 
 
     // Start is called before the first frame update
@@ -75,7 +78,7 @@ public class turretController : MonoBehaviour
 
     private void shoot(){
         //Debug.Log("test shoot ...");
-        Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z);
+        Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z+this.zShootExtendDistance);
         Quaternion spawnRotation = Quaternion.Euler(this.barrelPipe.transform.localEulerAngles.y,this.oddBallSpot.transform.localEulerAngles.z-this.correctionDegrees,0);
         Instantiate (roundObject, spawnPosition, spawnRotation);
     }

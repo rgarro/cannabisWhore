@@ -10,6 +10,7 @@ TagManager:
   - stukaTarget
   - m4a
   - boundary
+  - roundTag
   layers:
   - Default
   - TransparentFX
