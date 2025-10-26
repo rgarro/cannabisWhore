@@ -1423,6 +1423,7 @@ MonoBehaviour:
   windowWidth: 150
   remainingLife: 100
   lifeToDecreasePerHit: 5
+  remainingLabel: remaining
   style:
     m_Name: 
     m_Normal:
