@@ -64,19 +64,19 @@ public class turretController : MonoBehaviour
      private void leftArrowAction(){
         //Debug.Log("left turret action ...");
         this.playServoSoundOn();
-        this.tetha = this.oddBallSpot.transform.rotation.z + this.rotationSteps;
+        this.tetha = this.oddBallSpot.transform.rotation.z + (this.rotationSteps*Time.deltaTime);
          this.oddBallSpot.transform.Rotate(0,0,this.tetha);
     }
     private void rightArrowAction(){
         //Debug.Log("right turret action ...");
         this.playServoSoundOn();
-        this.tetha = this.oddBallSpot.transform.rotation.z - this.rotationSteps;
+        this.tetha = this.oddBallSpot.transform.rotation.z - (this.rotationSteps*Time.deltaTime);
         this.oddBallSpot.transform.Rotate(0,0,this.tetha);
         
     }
 
     private void shoot(){
-        Debug.Log("test shoot ...");
+        //Debug.Log("test shoot ...");
         Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z);
         Quaternion spawnRotation = Quaternion.Euler(this.barrelPipe.transform.localEulerAngles.y,this.oddBallSpot.transform.localEulerAngles.z-this.correctionDegrees,0);
         Instantiate (roundObject, spawnPosition, spawnRotation);
