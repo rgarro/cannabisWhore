@@ -35,11 +35,25 @@ public class Moriarty : MonoBehaviour
     public float tankForwardSpeed = 2.00f;
     private float tetha = 0.00f;//the angle
      public float rotationSteps = 3.014f;
+     public string expectedTargetTag = "stukaTarget";
+     public GameObject explosion;
+     private GameObject scoreUpdater;
 
     // Start is called before the first frame update
     void Start()
     {
         this.servoSoundPlayer = GetComponent<AudioSource>();
+        this.scoreUpdater = GameObject.FindWithTag("BatComputer");
+    }
+
+    private void OnTriggerEnter(Collider other){//crashed the stuka ..
+        if(this.expectedTargetTag == other.gameObject.tag){
+            GameObject e = Instantiate(this.explosion) as GameObject;
+            e.transform.position = transform.position;
+            Destroy(other.gameObject);
+            scoreDisplay tmpObj = this.scoreUpdater.GetComponent(typeof(scoreDisplay)) as scoreDisplay;
+            tmpObj.addScore(10);
+        }
     }
 
     // Update is called once per frame

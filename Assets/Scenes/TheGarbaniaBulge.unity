@@ -534,6 +534,9 @@ MonoBehaviour:
   Chaffee: {fileID: 397975446}
   tankForwardSpeed: 3.69
   rotationSteps: 0.44
+  expectedTargetTag: stukaTarget
+  explosion: {fileID: 5900953402620731293, guid: 7c0e74fa119cf4d9eb03fa644d69ba90,
+    type: 3}
 --- !u!114 &397975448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,8 +720,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.89, y: 3.38, z: 8.79}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.89, y: 1.19, z: 6.98}
+  m_Center: {x: 0, y: -1.18, z: -0.68}
 --- !u!1 &408188859
 GameObject:
   m_ObjectHideFlags: 0

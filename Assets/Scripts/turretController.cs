@@ -78,7 +78,7 @@ public class turretController : MonoBehaviour
 
     private void shoot(){
         //Debug.Log("test shoot ...");
-        Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z+this.zShootExtendDistance);
+        Vector3 spawnPosition = new Vector3 (this.oddBallSpot.transform.position.x,this.oddBallSpot.transform.position.y,this.oddBallSpot.transform.position.z);//+this.zShootExtendDistance
         Quaternion spawnRotation = Quaternion.Euler(this.barrelPipe.transform.localEulerAngles.y,this.oddBallSpot.transform.localEulerAngles.z-this.correctionDegrees,0);
         Instantiate (roundObject, spawnPosition, spawnRotation);
     }

@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5f057ba04ef2340abd902c69598eae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundVelocity: 12.9
+  roundVelocity: 16.12
   roundBody: {fileID: 2743946324996550076}
   is_rocket: 0
   is_round: 1
@@ -196,7 +196,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 89c3becde003e4e428cb15ab61813739, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c34813e86aa8e471d99f21063c286967, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
